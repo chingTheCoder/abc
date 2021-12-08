@@ -1,0 +1,284 @@
+nav {
+    background-color: #141416;
+}
+
+nav {
+    padding: 0 5%;
+}
+
+.nav_links li:nth-child(1) a {
+    color: #C92323;
+}
+
+header {
+    background-color: white;
+}
+
+
+.bathroom_banner {
+    position: relative;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    height: 85vh;
+}
+
+.bathroom_cat_description {
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: sienna;
+    clip-path: polygon(0 0, 30% 0, 70% 100%, 0 100%); */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0 5%;
+}
+
+.bcd_content {
+    position: relative;
+    width: 85%;
+}
+
+.bcd_content img {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+}
+.bcd_content p {
+    margin-top: calc(1.2rem + 50px);
+    text-align: left;
+    padding-left: 1.2rem;
+    font-size: 1.2rem;
+} 
+
+.bathroom_cat_image {
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: silver;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, ); */
+    
+}
+
+.bci_cover {
+    
+}
+
+.bci_cover img {
+    width: 100%;
+    height: 85vh;
+}
+
+.collection {
+    margin-top: 15vh;
+}
+
+.collection_list {
+    margin-top: 15vh;
+}
+
+
+.collection_list div {
+    
+}
+
+.collection h2 {
+    padding: 0 5%;
+    font-size: 1.2rem;
+} 
+.collection_list{
+    padding:0 5%;
+}
+
+.collection_list div{
+    
+}
+
+.collection_list div figure {
+    box-shadow: 0 0 5px darkgray;
+}
+
+.collection_list div figure img {
+    height: 300px;
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+   .collection_list div {
+       padding: 0;
+   }
+   header{
+       height: auto;
+   }
+
+   .bathroom_banner {
+       top: 0;
+       margin-top: 10vh;
+       height: auto;
+   }
+
+   .bcd_content {
+       width: 100%;
+       padding-right: 5%;
+   }
+
+   .bci_cover {
+       padding: 5%;
+   }
+   .bci_cover img {
+       height: 50vh;
+   }
+
+   .bathroom_cat_description {
+       justify-items:left;
+   }
+
+   .bathroom_cat_description p {
+       font-size: .8rem;
+   }
+
+   .collection {
+         width: 100vw;
+    }
+
+    .collection_list {
+        width: 100%;
+        padding:0;
+        margin: 0;
+        padding: 0 5%;
+    }
+
+    .collection div {
+        
+    }
+    .collection_list div figure img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .collection_list div {
+        padding: 0;
+    }
+    header{
+        height: auto;
+    }
+ 
+    .bathroom_banner {
+        top: 0;
+        margin-top: 10vh;
+        height: auto;
+    }
+ 
+    .bcd_content {
+        width: 100%;
+        padding-right: 5%;
+    }
+ 
+    .bci_cover {
+        padding: 5%;
+        padding-bottom: 0;
+    }
+    .bci_cover img {
+        height: 55vh;
+    }
+ 
+    .bathroom_cat_description {
+        justify-items:left;
+        height: 35vh;
+    }
+ 
+    .bathroom_cat_description p {
+        font-size: .8rem;
+    }
+ 
+    .collection {
+          margin-top: 0;
+          width: 100vw;
+     }
+
+
+     .collection h2{
+         margin: 1.2rem 0;
+         font-size: 1rem;
+     }
+ 
+     .collection_list {
+         width: 100%;
+         padding:0;
+         margin: 0;
+         padding: 0 5%;
+     }
+ 
+     .collection div {
+         
+     }
+     .collection_list div figure img {
+         height: 250px;
+         object-fit: cover;
+     }
+ 
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+    header {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .collection_list div {
+        padding: 0;
+    }
+    header{
+        height: auto;
+    }
+ 
+    .bathroom_banner {
+        top: 0;
+        margin-top: 10vh;
+        height: auto;
+    }
+ 
+    .bcd_content {
+        width: 100%;
+        padding-right: 5%;
+    }
+ 
+    .bci_cover {
+        padding: 5%;
+        padding-bottom: 0;
+    }
+    .bci_cover img {
+        height: 55vh;
+    }
+
+    .collection h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+}
+
+
+

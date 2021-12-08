@@ -1,0 +1,143 @@
+@media screen and (max-width: 576px) {
+
+
+    header {
+        height: 80vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%)
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 65vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner_description_inner p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    
+    .site_intro {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+
+
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 3rem;
+    }
+
+
+    .site_intro {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+
+
+    
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 4rem;
+    }
+
+    .site_intro h2 {
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+    .site_intro p {
+        font-size: 1rem;
+    }
+ 
+
+}
+
+
+@media screen and (min-width: 992.1px) and (max-width: 1200px) {
+
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    
+}

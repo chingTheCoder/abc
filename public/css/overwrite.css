@@ -1,0 +1,584 @@
+/* carousel */
+.carousel {
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img_carousel_cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img_carousel_cover img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel_cover_one {
+    z-index: 100;
+}
+
+.carousel_cover_two {
+    z-index: 300;
+}
+
+/*end of carousel*/
+
+.carousel div {
+    height: 100vh;
+    width: 100vw;
+}
+.burger div {
+    background-color: white;
+    height: 5px;
+    margin: 5px;
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+/*CAROUSEL WORDS*/
+.carousel_words {
+    position: absolute;
+    height: 50vh;
+    left: 25vw;
+    width: 50vw;
+    right: 25vw;
+    z-index: 500;
+    top: 25vh;
+    height: 50%;
+    overflow: hidden;
+}
+
+.carousel_moving_words {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: translateX(0);
+    transition: .7s ease-in;
+}
+
+
+.carousel_moving_words div {
+    width: 50vw;
+    height: 50vh;
+    font-size:5.5rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.visit_showroom {
+    position: absolute;
+    height: auto;
+    left: 50%;
+    width: auto;
+    z-index: 500;
+    bottom: 15vh;
+    height: auto;
+    overflow: hidden;
+    padding: 1.2rem;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.visit_showroom:hover {
+    cursor: pointer;
+    background-color: red;
+    border-color: red;
+    text-decoration: none;
+    color: white;
+}
+
+.drop_me_down {
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    z-index: 500;
+    color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+    transform: translateX(-50%);
+    padding: .2rem .7rem .2rem .7rem;
+    font-size: 1.5rem;
+}
+
+.drop_me_down:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.row {
+    width: 100%;
+}
+
+
+
+.carousel_cover:nth-child(){
+    background-image: url("public/images/carousel/slide01.png");
+}
+    
+.carousel_cover:nth-child(){
+    background-image: url("public/images/carousel/slide02.png");
+}
+ 
+#collection {
+    background-color: #e7e7e7;
+    padding: 2rem 5%;
+}
+#collection h2 {
+    text-align: center;
+    padding:0;
+}
+
+#collection .row aside, #collection .row article{
+    height: 30rem;
+}
+
+#collection .row {
+    margin: 2rem 0;
+}
+#collection .row article {
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height:auto; 
+}
+
+#collection .row article h3 {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+#collection .row article div {
+    width: 100%;
+}
+  
+/*end of collection*/
+
+/*surface and tiles*/
+#surface_and_tiles {
+    height: 60vh;
+    background-image: url("/images/surface.png");
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-attachment: local;
+    background-position: bottom bottom;
+}
+
+.inspire {
+    margin-bottom: 5vh;
+    font-size: 3rem;
+}
+.visit {
+    border-radius: 10px;
+    padding: 5px 1.2rem 5px 1.2rem;
+    font-size: 1.5rem;
+}
+
+#surface_and_tiles div {
+    text-align: center;
+}
+
+/*brand_images*/
+
+.brand_image {
+    width: 120px;
+}
+
+#our_trusted_brands h4{
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+
+@media screen  and (max-width: 576.99px) {
+
+  
+
+
+    .burger div {
+        background-color: darkgray; 
+    }
+    
+    .visit_showroom{
+        display: none;
+    }
+    
+    .carousel_cover:nth-child(){
+        background-image: url();
+    }
+    
+    .carousel_cover:nth-child(){
+        background-image: url();
+    }
+ 
+    .carousel_moving_words div {
+           font-size:1.5rem;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .carousel_moving_words div {
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .drop_me_down {
+        display: none;
+    }
+
+    .carousel div {
+        height: 50vh;
+    }
+    
+    .visit_showroom {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    
+    .carousel_moving_words div {
+        width: 70vw;
+        font-size:1.5rem;
+    }
+    
+    .carousel_words {
+    left: 15vw;
+    width: 70vw;
+    right: 15vw;
+    }
+    
+    #introduction {
+        margin: 1.2rem 0 1.2rem 0;
+        padding: 0;
+    }
+    
+
+    #introduction > aside {
+        display: none;
+    }
+
+    #introduction > article {
+        font-size: .8rem;
+        padding: 1.2rem 5%;
+    }
+    
+    #collection {
+        background-color: #e7e7e7;
+        padding: 1rem 5%;
+    }
+
+    #collection .bathroom_collection {
+        margin-top: 0;
+    } 
+
+    #collection .row aside {
+        height: 15rem;
+    }
+
+    #collection .row article p {
+        font-size: .8rem;
+    }
+    #collection > h2 {
+        font-size: 1.2rem;
+        color: #111;
+        display: none;
+    }
+    
+    .inspire {
+        font-size: 2rem;
+    }
+    
+    .visit {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #collection .row {
+        margin-bottom: 0;
+    }
+
+    #collection .row article {
+        padding-left: 5%;
+        padding-bottom: 1.2rem;
+    }
+    
+    /*surface and tiles*/
+    #surface_and_tiles {
+        height: 30vh;
+        background-size: cover;
+        background-image: url("/images/sursmall.png");
+        background-attachment: local;
+        background-repeat: no-repeat;
+    }
+
+    .inspire {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .visit {
+        font-size: .8rem;
+        padding: 2px 1.2rem 2px 1.2rem;
+        border-radius: 5px;
+        border-color: #e7e7e7;
+    }
+
+    #our_trusted_brands h2 {
+        text-align: left;
+        padding-top: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .brand_image {
+        width: 80px;
+    }
+
+}
+
+@media screen  and (min-width: 577px) and (max-width: 768px){
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .carousel div{
+        height: 50vh;
+    }
+
+    .carousel_words {
+        top: 10vh;
+        height: 50vh;
+        width: 60vw;
+        left: 20vw;
+        right: 20vw;
+    }
+
+    .visit_showroom {
+        display: none;
+    }
+
+    .carousel_moving_words div {
+        font-size: 2.5rem;
+        width: 60vw;
+        font-weight: 500;
+    }
+
+    .drop_me_down {
+        display: none;
+    }
+
+    #introduction {
+        padding: 5%;
+    }
+
+    #introduction aside {
+        display: none;
+    }
+
+    #collection {
+        background-color: #e7e7e7;
+    }
+
+    #collection h2 {
+        text-align: left;
+        padding: 1.2rem 5% 0 5%;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .bathroom_collection {
+        margin: 1.2rem 0 !important;
+        padding: 0 5%;
+    }
+
+    .kitchen_collection {
+        margin: 1.2rem 0 0 0;
+        padding: 0 5% 5% 5%;
+        margin-bottom: 0 !important;
+    }
+
+    #collection .row article {
+        padding: 0 5% 1.2rem 5%;
+    }
+
+    /*surface and tiles*/
+
+    #surface_and_tiles {
+        height: 30vh;
+        background-image: url("/images/surface.png");
+        background-position: center bottom;
+        background-attachment: local;
+    }
+
+    .inspire {
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .visit {
+        padding: 5px 1.2rem 5px 1.2rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    /*our trusted brands*/
+
+    /* #our_trusted_brands img {
+        display: none;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } */
+}
+
+
+@media screen  and (min-width: 768.1px) and (max-width: 992px) {
+
+    header {
+        height: 80vh;
+    }
+
+    .visit_showroom {
+        display: none;
+    }
+
+    .carousel_words {
+        left: 10vw;
+        width: 80vw;
+        right: 10vw;
+    }
+
+    .carousel_moving_words div {
+        font-size: 3.5rem;
+        width: 80vw;
+    }
+
+    #introduction {
+        padding: 5%;
+        margin: 0 !important;
+    }
+
+    #introduction aside {
+        display: none;
+    }
+
+    /*collection*/
+
+    #collection {
+        background-color: #e7e7e7;
+        padding: 1.5rem 5%;
+    }
+
+    #collection h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    
+        
+    }
+
+    .kitchen_collection aside {
+        background-position: bottom bottom;
+    }
+
+    #surface_and_tiles{
+        height: 40vh;
+    }
+
+    .inspire {
+        margin-bottom: 5vh;
+        font-size: 3rem;
+    }
+
+    .visit {
+        font-size: 1.2rem;
+        padding: 5px 1.2rem 5px 1.2rem;
+        border-radius: 5px;
+    }
+}
+
+@media screen  and (min-width: 992.1px) and (max-width: 1200px) {
+
+    header {
+        height: 80vh;
+    }
+
+    .carousel {
+        height: 80vh;
+    }
+
+    .carousel div {
+        height: 80vh;
+    }
+
+    .carousel_words {
+        width: 60vw;
+        left: 20vw;
+        right: 20vw;
+    }
+
+    .smaller_navigation ul {
+        width: 25%;
+    }
+
+    .carousel_moving_words div {
+        width: 60vw;
+        font-size: 4rem;
+    }
+
+    .nav_links {
+        width: 25%;
+    }
+
+    .visit_showroom {
+        border-radius: 10px;
+    }
+
+    #collection {
+        background-color: #e7e7e7;
+        padding: 1.2rem 5%;
+    }
+
+    #surface_and_tiles{
+        height: 40vh;
+        background-position: bottom bottom;
+    }
+
+    .inspire {
+        margin-bottom: 5vh;
+        font-size: 3rem;
+    }
+
+    .visit{
+        font-size: 1.2rem;
+        padding: 5px 1.2rem 5px 1.2rem;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+
+

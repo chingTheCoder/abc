@@ -1,0 +1,260 @@
+nav {
+    background-color: #141416;
+}
+
+nav {
+    padding: 0 5%;
+}
+
+
+.nav_links li:nth-child(3) a {
+    color: #C92323;
+}
+
+#kitchen_top {
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-gap: 1.2rem;
+}
+
+
+.aside, #middle {
+    height: 45vh;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.aside {
+    display: grid;
+    align-items: center;
+}
+
+.aside img {
+    height: 35vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#middle img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.kithcen_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 5%;
+    grid-gap: 1.2rem;
+}
+
+.kithcen_bottom div img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+nav {
+    background-color: #141416;
+}
+
+nav {
+    padding: 0 5%;
+}
+
+
+header {background-color: white;}
+
+
+@media screen and (max-width: 576px) {
+
+
+    header {
+        height: 80vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%)
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 65vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner_description_inner p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    
+    .site_intro {
+        display: none;
+    }
+
+    #kitchen_top {
+        grid-template-columns: 1fr;
+    }
+
+    .kithcen_bottom {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+
+
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 3rem;
+    }
+
+
+    .site_intro {
+        display: none;
+    }
+
+    #kitchen_top {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+
+    #middle {
+        grid-column: span 2;
+    }
+
+    .kithcen_bottom {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+
+
+    
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 4rem;
+    }
+
+    .site_intro h2 {
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+    .site_intro p {
+        font-size: 1rem;
+    }
+
+    #kitchen_top {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+
+    #middle {
+        grid-column: span 2;
+    }
+
+    .kithcen_bottom {
+        grid-template-columns: 1fr;
+    }
+ 
+
+}
+
+
+@media screen and (min-width: 992.1px) and (max-width: 1200px) {
+
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    #kitchen_top {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+
+    #middle {
+        grid-column: span 2;
+    }
+
+    .kithcen_bottom {
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+

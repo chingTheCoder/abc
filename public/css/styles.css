@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15vh;
+    padding: 0 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 700;
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+}
+
+nav .logo {
+    height: 100%;
+}
+
+.burger {
+    display: none;
+}
+.nav_links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_links {
+    margin-bottom: 0;
+}
+
+.nav_links li {
+    list-style: none;
+    margin: 0 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links li:last-child {
+    margin-right: 0;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+nav .logo a img{
+    height: 11vh;
+    width: 6rem;
+    vertical-align: middle;
+}
+
+.nav_links li:nth-child(1) {
+    position: relative;
+}
+.sub_links {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    list-style: none;
+    width: 200px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: .3s ease-in bottom;
+    transition: .5s opacity;
+    
+}
+
+.nav_links li:nth-child(1):hover > .sub_links{
+    top: 15vh;
+    opacity: 1;
+}
+
+
+.sub_links a {
+    width: 100%;
+    display: block;
+    margin: .2rem 0;
+    padding: .5rem 0;
+    color: #141416 !important;
+}
+
+.sub_links li a:hover {
+   color: #C92323;
+}
+
+.small_header {
+    display: none;
+}
+
+
+/*all styles*/
+    .banner_info {
+        position: absolute;
+        height: 75vh;
+        padding: 0 5%;
+        margin-top: 20vh;
+        width: 100%;
+        margin-left: 0;
+    }    
+
+    .dark_background {
+        background-color: #141416;
+    }
+
+    .background_picture {
+        background-size: cover;
+    }
+
+    .banner_description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        z-index: 300;
+        width: 25%;
+        left: 12%;
+        display: grid;
+        align-items: center;
+    }
+
+    .banner_description_inner {
+        color: white;
+        height: auto;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 6rem;
+        text-align: left;
+    }
+
+    .banner_description_inner h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin: .8rem 0;
+    }
+
+    .banner_description_inner h1 span {
+        font-size: 2rem;
+    }
+    .banner_description_inner p {
+        text-align: left;
+        margin: .2rem 0;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .banner_description_inner hr {
+        width: 100px;
+        height: .5rem;
+        background-color: white;
+        margin-top: 1rem;
+    }
+
+    /*featured products*/
+
+    .site_intro {
+        padding: 5% 5%;
+    }
+    .site_intro h2{
+        text-align: center;
+    }
+
+    .site_intro p {
+        margin: 2rem;
+        line-height: 2rem;
+        padding: 0 5%;
+        font-size: 1.2rem;
+    }
+
+/*all styles*/
+.inspire {
+    padding-top: 10vh;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.visit {
+    border: .1rem solid white;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.visit:hover {
+    background-color: #C92323;
+    text-decoration: none;
+    color: whitesmoke;
+    border: none;
+}
+
+header button {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #f9f7f5;
+    color: white;
+    padding: .8rem .8rem .8rem .8rem;
+    border: ;
+    margin-top: 20vh;
+}
+
+header button i {
+    font-size: 2rem;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: #C92323;
+    color: whitesmoke;
+}
+
+
+#introduction {
+    padding: 5% 10% 5% 10%;
+}
+
+#introduction aside {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/*our trusted brands*/
+
+#our_trusted_brands {
+    padding: 0 5%;
+}
+
+#our_trusted_brands h2 {
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+#our_trusted_brands ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 1.1rem;
+    margin-top: .5rem;
+}
+
+#our_trusted_brands ul li {
+    display: inline;
+}
+
+#our_trusted_brands ul li a {
+    margin : 0 1rem;
+    background-color: white;
+}
+#our_trusted_brands ul li a img {
+    height: 120px;
+    width: 150px;
+}
+
+
+footer {
+    background-color: #111; 
+    padding: 0 5%;
+    color: gray;
+}
+
+footer ul {
+    list-style: none;
+}
+
+
+#usefull_links ul li a {
+    color: #C92323;
+}
+.list_link{
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+#top_footer {
+    box-sizing: border-box;
+    border-bottom: 1px solid whitesmoke;
+    padding: 3rem 0;
+    grid-gap: 2rem;
+}
+
+#top_footer h3 , #footer_brand {
+    margin-bottom: 1.2rem;
+}
+
+#map iframe{
+    height: auto;
+    width: 100%;
+}
+.conn {
+    margin-left: 1.2rem;
+}
+
+#last {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+}
+
+
+#last_links ul {
+    text-align: end;
+}
+
+#last_links ul li{
+    display: inline-block;
+    margin: 1.rem;
+}
+
+#last_links ul li a {
+    color: #C92323;
+    padding: 0 1.2rem;
+}
+
+
+.smaller_navigation {
+    width: 25px;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.smaller_navigation div {
+    height: auto;
+}
+
+
+.smaller_navigation ul {
+    position: fixed;
+    top: 20vh;
+    height: auto;
+    right: 0;
+    z-index: 50000;
+    width: 50vw;
+    background-color: rgb(1, 1, 1);
+    padding: 0 5%;
+    transform: translateX(100%);
+}
+
+
+.smaller_navigation ul li {
+    margin: .8rem 0;
+}
+
+.smaller_navigation ul li a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.smaller_navigation ul {
+    list-style: none;
+}
+
+
+.burger_piece {
+    height: 2px;
+    font-size: .1rem;
+    width: 100%;
+    background-color: darkgray;
+    margin: 5px 0;
+}
+
+
+.t1{
+    transform: rotate(-45deg);
+}
+
+.t2{
+    display: none;
+}
+
+.t3{
+    transform: rotate(45deg) translate(-10px,-6px);  
+}
+
+/*navigation responsiveness*/
+@media (min-width: 320px) and (max-width : 1200px) {
+
+
+    header {
+        overflow: hidden;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+
+    header nav {
+        display: none;
+    }
+
+    .small_header {
+        position: fixed;
+        width: 100%;
+        display: block;
+        text-align: left;
+        height: 10vh;
+        background-color: #141416;
+        color: white;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 5000;
+    }
+
+    .carousel {
+        margin-top: 10vh;
+    }
+
+
+    .small_header .logo a img {
+        width: 4rem;
+        height: auto;
+    }
+
+    .nav_links {
+        position: absolute;
+        right: 0;
+        top: 15vh;
+        background-color: #333;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav_links li {
+        margin: .8rem 0 .8rem .8rem;
+    }
+
+    .nav_links li a {
+        padding: .8rem;
+    }
+
+
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-10px,6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-10px,-6px);
+    }
+}
+
+
+@media (min-width: 992px) and (max-width : 1200px) {
+    
+    nav {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .nav_links li {
+        margin: 0 .3rem;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width : 991.99px) {
+
+        .smaller_navigation ul {
+            width: 20vw;
+        }
+}
+
+

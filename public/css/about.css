@@ -1,0 +1,223 @@
+html, body {
+    width: 100%;
+}
+
+header {
+    height: 15vh;
+}
+
+nav {
+    background-color: #141416;
+}
+
+nav {
+    padding: 0 5%;
+}
+
+
+.nav_links li:last-child a {
+    color: #C92323;
+}
+
+hr {
+    height: 1px;
+    background-color: #111;
+    width: 100%;
+}
+
+.core_header {
+    font-weight: bold;
+}
+
+#about_top {
+    padding:5% 15%;
+    height: auto;
+}
+
+#about_top h2 {
+    text-align: left;
+}
+
+#message_from_chairman {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0 5%;
+}
+
+.chairman:nth-child(2) {
+    display: grid;
+    align-items: center;
+    padding: 0 5%;
+    background-color: whitesmoke;
+}
+
+#bhagh_of_abc {
+    margin:4rem 30%;
+}
+
+
+#bhagh_of_abc div {
+    text-align: center;
+}
+
+
+#bhagh_of_abc div ul {
+    list-style-type: none;
+}
+
+#bhagh_of_abc div ul li {
+    margin: 1rem 0;
+}
+
+#bhagh_of_abc h3, #bhagh_of_abc p {
+    text-align: center;
+}
+
+
+#bhagh_of_abc h3, #bhagh_of_abc p{
+    padding: 0 5%;
+}
+
+#values_and_god{
+    padding: 4rem 30%;
+}
+
+#values_and_god h3 {
+    text-align: center;
+}
+
+#values_and_god ul {
+    list-style-type: none;
+}
+
+#values_and_god ul li {
+    margin: 2rem 0;
+}
+
+.gods_list {
+    text-align: center;
+}
+
+#hands_image {
+   background-color: red;
+} 
+
+
+@media (min-width: 320px) and (max-width : 479.99px) { 
+
+    #about_top {
+        padding:5% 5%;
+        width: 100%;
+    }
+
+    #message_from_chairman {
+        width: 100%;
+        height: auto;
+    }
+
+    .chairman:nth-child(1) {
+        grid-column: span 2;
+        height: 40vh;
+    }
+
+    .chairman:nth-child(2) {
+        display: unset;
+        padding: 1.2rem 5%;
+        grid-column: span 2;
+        height: auto;
+    }
+
+    #bhagh_of_abc {
+        display: none;
+    }
+
+    #values_and_god{
+        width: 100%;
+        padding: 4rem 5%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+}
+
+@media (min-width: 480px)  and (max-width: 767.99px){
+
+    body {
+        width: 100vw;
+    }
+    header , footer {
+        display: none;
+    }
+ 
+    #about_top {
+        padding:5% 5%;
+        width: 100%;
+    }
+
+    #message_from_chairman {
+        width: 100%;
+        height: 140vh;
+    }
+
+    .chairman:nth-child(1) {
+        grid-column: span 2;
+        height: 40vh;
+    }
+
+    .chairman:nth-child(2) {
+        grid-column: span 2;
+        height: a;
+    }
+
+    #bhagh_of_abc {
+        display: none;
+    }
+
+    #values_and_god{
+        display: none;
+        width: 100%;
+        padding: 14rem 5%;
+    }
+
+    footer {
+        height: auto;
+    }
+    
+}
+
+@media (min-width : 768px ) and (max-width : 1021.99px) {
+
+    #message_from_chairman {
+        height: 80vh;
+    }
+
+    .chairman:nth-child(1) {
+        height: 40vh;
+        grid-column: span 2;
+    }
+
+    .chairman:nth-child(2) {
+        grid-column: span 2;
+        height: 40vh;
+    }
+
+    #values_and_god{
+        width: 100%;
+        padding: 4rem 10%;
+    }
+   
+
+}
+
+@media (min-width: 1024px) {
+
+
+}
+
+@media (max-width: 1200px) {
+
+}

@@ -1,0 +1,259 @@
+nav {
+    background-color: #141416;
+}
+
+nav {
+    padding: 0 5%;
+}
+
+
+header {background-color: white;}
+
+.nav_links li:nth-child(2) a {
+    color: #C92323;
+}
+#tile_brands {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: whitesmoke;
+    padding: 5% 5%;
+    font-size: 1.5rem;
+}
+
+#list_of_tiles ul {
+    list-style: none;
+}
+
+#list_of_tiles ul li {
+    margin: 2rem 0;
+}
+
+#list_of_tiles ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    padding-bottom: .5rem;
+    width: 70%;
+    border-bottom: 3px solid gray;
+}
+
+#images_of_tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.tile_image {
+    height: 320px;
+}
+
+.tile_image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+
+
+    header {
+        height: 80vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%)
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 65vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner_description_inner p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    
+    .site_intro {
+        display: none;
+    }
+
+    #list_of_tiles h2  {
+        font-size: 1.2rem;
+    }
+
+    #tile_brands {
+        margin-top: 0;
+        grid-template-columns: 100%;
+    }
+
+
+    #list_of_tiles ul li {
+        margin: .5rem 0;
+    }
+    
+    #list_of_tiles ul li a {
+        font-size: .8rem;
+    }
+
+    #list_of_tiles ul li a {
+        width: 100%;
+    }
+
+    #images_of_tiles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tile_image {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+
+
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 3rem;
+    }
+
+
+    .site_intro {
+        display: none;
+    }
+
+    #tile_brands {
+        grid-template-columns: 35% 65%;
+    }
+
+    #images_of_tiles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+
+    #list_of_tiles ul li {
+        margin: 1rem 0;
+    }
+
+    #list_of_tiles ul li a {
+        font-size: 1rem;
+    }
+
+    .tile_image {
+        height: 220px;
+    }
+
+
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+
+
+    
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .banner_description_inner h1 {
+        font-size: 4rem;
+    }
+
+    .site_intro h2 {
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+    .site_intro p {
+        font-size: 1rem;
+    }
+
+    .tile_image {
+        height: 220px;
+    }
+ 
+
+}
+
+
+@media screen and (min-width: 992.1px) and (max-width: 1200px) {
+
+    header {
+        background-color: white;
+    }
+
+    #list_of_tiles h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 60vh;
+    }
+    
+    .banner_info {
+        margin-top: calc(10vh + 5%);
+        height: 45vh;
+    }
+
+
+    .banner_description{
+        width: 100%;
+        padding-right: 20%;
+        align-items: flex-end;
+        height: 45vh;
+    }
+
+    .tile_image {
+        height: 220px;
+    }
+    
+}
