@@ -1,223 +1,311 @@
-html, body {
+.row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
     width: 100%;
 }
 
 header {
-    height: 15vh;
-}
-
-nav {
-    background-color: #141416;
-}
-
-nav {
-    padding: 0 5%;
-}
-
-
-.nav_links li:last-child a {
-    color: #C92323;
-}
-
-hr {
-    height: 1px;
-    background-color: #111;
+    background-image: url('/images/about.png');
+    position: relative;
     width: 100%;
 }
 
-.core_header {
+.about_header {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    width: 100%;
+    transform: translateY(25%);
+    color: #efefef;
+}
+
+.about_header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
     font-weight: bold;
 }
 
-#about_top {
-    padding:5% 15%;
-    height: auto;
-}
+.about_header p {
+    font-size: .8rem;
+} 
 
-#about_top h2 {
-    text-align: left;
-}
-
-#message_from_chairman {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 0 5%;
-}
-
-.chairman:nth-child(2) {
-    display: grid;
-    align-items: center;
-    padding: 0 5%;
-    background-color: whitesmoke;
-}
-
-#bhagh_of_abc {
-    margin:4rem 30%;
-}
-
-
-#bhagh_of_abc div {
-    text-align: center;
-}
-
-
-#bhagh_of_abc div ul {
+ul {
     list-style-type: none;
 }
-
-#bhagh_of_abc div ul li {
-    margin: 1rem 0;
+.small_header {
+    background-color: transparent;
 }
 
-#bhagh_of_abc h3, #bhagh_of_abc p {
+
+.who_are_we {
+    background-color:#efefef;
+}
+.who_are_we_details h2 {
     text-align: center;
+    padding-top: 2rem;
+    color: #535151;
 }
 
-
-#bhagh_of_abc h3, #bhagh_of_abc p{
-    padding: 0 5%;
+.who_are_we_details hr {
+    height: 5px;
+    margin: 0px auto;
+    background-color:#535151;;
+    width: 15%;
+   
 }
 
-#values_and_god{
-    padding: 4rem 30%;
+.who_are_we_details p {
+    background-color: #242424;
+    color: #aeacac;
+    padding: 15px;
+    margin-top: 15px;
 }
 
-#values_and_god h3 {
-    text-align: center;
+.whoa_are_we_image {
+    display: none;
 }
 
-#values_and_god ul {
-    list-style-type: none;
-}
+/*end of who are */
 
-#values_and_god ul li {
-    margin: 2rem 0;
+/*begining of god's gift*/
+
+.gift h4 {
+    margin-top: 2rem;
 }
 
 .gods_list {
     text-align: center;
+    margin: .8rem;
+    font-size: 1.1rem;
 }
 
-#hands_image {
-   background-color: red;
-} 
-
-
-@media (min-width: 320px) and (max-width : 479.99px) { 
-
-    #about_top {
-        padding:5% 5%;
-        width: 100%;
-    }
-
-    #message_from_chairman {
-        width: 100%;
-        height: auto;
-    }
-
-    .chairman:nth-child(1) {
-        grid-column: span 2;
-        height: 40vh;
-    }
-
-    .chairman:nth-child(2) {
-        display: unset;
-        padding: 1.2rem 5%;
-        grid-column: span 2;
-        height: auto;
-    }
-
-    #bhagh_of_abc {
-        display: none;
-    }
-
-    #values_and_god{
-        width: 100%;
-        padding: 4rem 5%;
-    }
-
-    footer {
-        height: auto;
-    }
-
-
+#gods_gift img {
+    display: block;
+    margin: 0px auto;;
+    max-width: 300px;
+    height: 120px;
+    margin-bottom: 1.2rem;
 }
 
-@media (min-width: 480px)  and (max-width: 767.99px){
 
-    body {
-        width: 100vw;
-    }
-    header , footer {
-        display: none;
-    }
- 
-    #about_top {
-        padding:5% 5%;
-        width: 100%;
+/*message from our chairman*/
+
+.message {
+    background-color: #242424;
+    color: #aeacac;
+}
+
+.message h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.message p {
+    text-align: center;
+}
+
+#madini_image {
+    position: relative;
+    transform: translateY(0%);
+    height: 300px !important;
+    width: 270px !important;
+    z-index: 1000;
+}
+
+
+
+/*core*/
+
+.core {
+    background-color: #efefef;
+    padding: 15px;
+    color: #535151;
+}
+
+.inner_core {
+    background-color: white;
+}
+
+.purpose, .values {
+    padding: 15px;
+}
+
+.purpose h5 {
+    font-size: 1.2rem;
+}
+
+.purpose p {
+    font-size: 1rem;
+}
+.values ul li {
+    margin: 1.2rem 0;
+    font-size: 1rem;
+}
+.core_header {
+    font-weight: bold;
+    display: block;
+}
+
+.mstari {
+    display: none;
+}
+
+.base_Core {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+    header {
+        background-image: url("/images/about_desk.png");
     }
 
-    #message_from_chairman {
-        width: 100%;
-        height: 140vh;
+    .about_header {
+        transform: translateY(0);
     }
 
-    .chairman:nth-child(1) {
-        grid-column: span 2;
-        height: 40vh;
+    .about_header h1 {
+        font-size: 5rem;
     }
 
-    .chairman:nth-child(2) {
-        grid-column: span 2;
-        height: a;
+    .about_header p {
+        font-size: 2rem;
     }
 
-    #bhagh_of_abc {
-        display: none;
+    .who_are_we{
+        height: 700px;
+        padding: 0 5%;
     }
 
-    #values_and_god{
-        display: none;
-        width: 100%;
-        padding: 14rem 5%;
+    .who_are_we_details h2 {
+        text-align: left;
+        padding-top: 2rem;
+        color: #535151;
+        padding-left: 1.2rem;
+        font-weight: bold;
     }
 
-    footer {
-        height: auto;
+    .who_are_we_details {
+        background-color: #242424;
+        display: grid;
+        align-items: center;
     }
     
-}
-
-@media (min-width : 768px ) and (max-width : 1021.99px) {
-
-    #message_from_chairman {
-        height: 80vh;
+    .who_are_we_details hr {
+        display: none;  
+    }
+    
+    .who_are_we_details p {
+        background-color: #242424;
+        color: #aeacac;
+        padding: 15px;
+        margin-top: 15px;
+    }
+    
+    .who_are_we_image {
+        display: block;
+        background-image: url("/images/seat.jpg");
+        background-size: cover;
     }
 
-    .chairman:nth-child(1) {
-        height: 40vh;
-        grid-column: span 2;
+    #gods_gift {
+        padding: 0 5%;
     }
 
-    .chairman:nth-child(2) {
-        grid-column: span 2;
-        height: 40vh;
+    .gods_list {
+        margin: 0.5rem;
+    }
+    
+    .message p {
+        padding: 0 6rem;
+        font-size: .9rem;
     }
 
-    #values_and_god{
-        width: 100%;
-        padding: 4rem 10%;
+    #madini_image {
+        border-radius: 0;
     }
-   
 
-}
+    .core {
+        position: relative;
+        padding: 0 5%;
+        margin: 2rem 0;
+        height: auto;
+        color: #aeacac;
+        background-color: white;
+    }
 
-@media (min-width: 1024px) {
+    .mstari {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: red;
+        height: 40%;
+        background-color: #aeacac;
+        width: 2px;
+        z-index: 1000;
+        transform: translateX(-50%);
+        transform: translateY(70%);
+    }
+
+    .base_Core {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        width: 80px;
+        z-index: 1200;
+        margin-left: -40px;
+        transform: translateY(-50%);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #efefef;
+        text-align: center;
+        background-color: #242424;
+        padding: 1rem 0;
+    }
+
+    .purpose {
+        background-color: #242424;
+        display: grid;
+        align-items: center;
+        padding: 0 15rem 0 2rem;
+    }
+
+    .values {
+        background-color: #242424;
+        padding-left: 5rem;
+    }
+
+    .values ul li {
+        font-size: .9rem;
+    }
+    .cc {
+        display: none;
+    }
+
+    .core_header {
+        display: block;
+        margin-bottom: .2rem;
+        font-size: 1rem;
+
+    }
+
+    br {
+        display: block;
+        margin: 2px 0;
+    }
 
 
-}
-
-@media (max-width: 1200px) {
-
+  
 }
