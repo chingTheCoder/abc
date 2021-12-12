@@ -22,7 +22,7 @@
                             <picture>
                               <source media="(max-width: 480px)" srcset="/images/carousel/cdv.jpg">
                               <source media="(max-width: 768px)" srcset="/images/carousel/noi.jpg">
-                              <img src="/images/carousel/slide01.png">
+                              <img src="/images/carousel/slide01.png" style="object-fit: cover;">
                             </picture>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         <div class="img_carousel_cover">
                             <picture>
                                 <source media="(max-width: 480px)" srcset="/images/carousel/extrasmall.png">
-                                <img src="/images/carousel/slide02.png">
+                                <img src="/images/carousel/1c.jpg">
                             </picture>
                         </div>
                   </div>
@@ -62,29 +62,39 @@
         </header>
         <!---end of the header -->
         <div id="#content">
-        <section id="introduction" class="row" style="width: 100%;">
-                <article class="col-12 order-2 col-sm-12 order-sm-2 col-md-12 col-lg-8 order-xl-1 col-xl-6">
-                  As part of the globalization of the ABC brand, ABC group has spread its wings 
-                  in international operations especially in India, Middle East, and African Countries. 
-                  We started our first showroom in Doha, Qatar in 2009 as our first international operation. 
-                  Within a couple of decades, the ABC group has grown exponentially.
-                </article>
-                <aside class=" col-12 order-1 col-sm-12 order-sm-1 col-md-12 col-lg-4 order-xl-2 col-xl-6">
-                    <img src="/images/abc-group.svg" 
-                        style="max-height: 100px;width: 80%;">
-                </aside>
+        <section id="introduction" style="width: 100%;">
+                <div class="inro_black_background">
+
+                </div>
+
+                <div class="background_intro_image">
+
+                </div>
+
+                <div class="background_intro_content">
+                      <p>
+                      <img src="/images/abc_black.png" style="height: 50px;margin-bottom:10px;"><br/>
+                      ABC EMPORIO is a venture of 'ABC GROUP', a synomy for high -end sanitary ware,
+                      bathroom fittings, tiles & alliedbuildings materials.ABC GROUP had its inception 
+                      in the year 1988 at Taliparamba in kerala, india.Today ABC Group is known as an industry 
+                      leader in the business of import and export of varoius luxury products & materials around the world
+                      <br/>
+                      <a target="_blank" href="/about" style="float: right">Read More</a>
+                      </p>
+                </div>
         </section>
 
         <section id="collection">
             <h2>EXPERIENCE BRILLIANCE PRODUCT COLLECTION</h2>
             <div class="row bathroom_collection">
               <aside class="product col-12 col-sm-12 col-md-6 col-lg-6" 
-                style="background-image: url('/images/Noken_13249.jpg');
+                style="background-image: url('/images/Noki.jpg');
                         background-size: cover;">
               </aside>
               <article class="product col-12 col-sm-12 col-md-6 col-lg-6">
                   <div>
                     <h3>BATHROOM</h3>
+                    <hr class="product_hr">
                     <p>we offer intrinsic quality born of the traditions, combining 
                       innovative techniques and timeless design</p>
                   </div>                    
@@ -95,6 +105,7 @@
               <article class="product order-2 col-12 col-sm-12 order-md-1 col-md-6  order-lg-1 col-lg-6">
                 <div>
                   <h3>kITCHEN</h3>
+                  <hr class="product_hr">
                   <p>We offer a broad diversity of possibilities to match individual aesthetic 
                     and functional requirements. Highest flexibility, clear from language 
                     complemented by selection of 300 different premium finishes makes 
@@ -102,7 +113,7 @@
                 </div>
               </article>
               <aside class="product order-1 col-12 col-sm-12 order-md-2 col-md-6  order-lg-2 col-lg-6" 
-                style="background-image: url('/images/Gamadecor-PORCELANOSA-Kitchens-emotions-E6.70-roble-alba_E3.70-gris-carbono-ghost.jpg');
+                style="background-image: url('/images/gama.jpg');
                   background-size: cover;">
               </aside>
             </div>
@@ -111,44 +122,73 @@
         <section id="surface_and_tiles">
                 <div>
                   <h1 class="inspire">SURFACE & TILES</h1>
-                  <a href="/surface" class="visit" aria-label="visit surface and tiles">Visit Tiles</a>
+                  <a href="/surface" class="visit" aria-label="visit surface and tiles">View products</a>
                 </div>
         </section>
+        <section id="featured_products">
+            <div class="inner_featured_products">
+                  <div>
+                          <h2 style="font-weight: bold;">FEATURED PRODUCTS</h2>
+                          <p>visit any of our showrooms, our experts will help you to design the home of your dream</p>
+                          <div><span style="font-size: 1.5rem">SHOWROOMS</span><a class="conn" style="font-size: 2rem;color: darkgray;"href="/showroom"><i class="far fa-arrow-alt-circle-right"></i></a></div>
+                  </div>
+                  <div>
+                        <div class="featured_images_cover">
+                              <div class="f_image">
+                                 <img src="/images/noken.jpg" alt="">           
+                              </div>
+
+                              <div class="f_image">
+                                <img src="/images/jean.jpg" alt="">
+                              </div>
+
+                              <div class="f_image">
+                                <img src="/images/sanibell.jpg" alt="">
+                              </div>
+
+                              <div class="f_image">
+                                <img src="/images/reginox.jpeg" alt="">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+        </section>
+        <!---end of featured products----->
         <section id="our_trusted_brands">
               <h4>Our Trusted Brands</h4>
               <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="https://www.bobrick.com/" target="_blank">
-                          <img src="/images/logos/bobrick.png" class="brand_image" alt="bobrick"></a>
+                          <img src="/images/logos/bobrick.svg" class="brand_image" alt="bobrick"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://www.deko.com/" target="_blank">
-                          <img src="/images/logos/deko.png" class="brand_image" alt="deko"></a>
+                          <img src="/images/logos/deko.svg" class="brand_image" alt="deko"></a>
                     </div>
                     <div class="swiper-slide">
                        <a href="https://www.jaquarlighting.com/" target="_blank">
-                        <img src="/images/logos/jaquar.png" class="brand_image" alt="jaguar"></a>
+                        <img src="/images/logos/jaquar.svg" class="brand_image" alt="jaguar"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://www.us.kohler.com/us/" target="_blank">
-                        <img src="/images/logos/kohler.png" class="brand_image" alt="kohler"></a>
+                        <img src="/images/logos/kohler.svg" class="brand_image" alt="kohler"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://www.ecoceramic.es/index.html" target="_blank">
-                        <img src="/images/logos/ECO.png" class="brand_image" alt="eco ceramics"></a>
+                        <img src="/images/logos/ecoceramics.svg" class="brand_image" alt="eco ceramics"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://www.genwec.com/" target="_blank">
-                        <img src="/images/logos/GENWEC.png" class="brand_image" alt="genwec"></a>
+                        <img src="/images/logos/GENWEC.svg" class="brand_image" alt="genwec"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" target="_blank">
-                        <img src="/images/logos/becken.png" class="brand_image" alt="eco ceramics"></a>
+                        <img src="/images/logos/becken.svg" class="brand_image" alt="eco ceramics"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" target="_blank">
-                        <img src="/images/logos/SEA.png" class="brand_image" alt="sea"></a>
+                        <img src="/images/logos/SEA.svg" class="brand_image" alt="sea"></a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://keros.com/" target="_blank">
@@ -188,7 +228,7 @@
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 200,
+            spaceBetween: 10,
           },
         },
       });

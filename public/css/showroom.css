@@ -10,45 +10,109 @@ nav {
     color: #C92323;
 }
 
-#showroom_wrapper {
-    padding: 0 10%;
+
+nav{
+    background-color: transparent;
 }
 
 
-#showroom_wrapper h1 {
+header {
+    height: 70vh;
+    background-image: url("/images/showroom.png");
+    position: relative;
+}
+
+
+.showroom_pictures {
+    margin: 0 5%;
+}
+
+.visit_our_showroom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 5%;
+    color: whitesmoke;  
+    font-size: 2rem;
+}
+
+.visit_showroom {
     text-align: center;
-    margin: 5% 0;
-}
-.room {
-    height: 25rem;
-    margin-bottom: 1.2rem;
 }
 
-.room_image {
-    height: 100%;
+.visit_showroom h2 {
+    font-weight: bold;
+    margin: 4rem 0;
 }
 
-.room_image img {
-    height: 100%;
-    width: 100%;
+
+.show_biz{
+    height: 60vh;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 1rem solid white;
+}
+.show_biz:nth-child(1) {
+    background-image: url("/images/zanz_one.jpg"); 
+}
+
+.show_biz:nth-child(2) {
+    background-image: url("/images/zanz_two.jpg");
+}
+
+
+.show_biz:nth-child(3) {
+    background-image: url("/images/zanz_three.jpg");
+}
+
+
+.show_biz:nth-child(4) {
+    background-image: url("/images/zanz_four.jpg");
+}
+
+/*have tea with us*/
+
+.have_tea_with_us {
+    margin: 2rem 20%;
+    background-color: #707070;
+    color: #e7e7e7;
+    padding: 5rem;
+}
+
+
+.list {
+    list-style-type: none;
+}
+
+.profession_image {
+    margin: 0px auto;
+    height: 140px;
+    width: 150px;
     object-fit: cover;
-    height: 25rem;
+    border-radius: 100%;    
+}
+.room:nth-child(3) {
+    margin-top: 2rem;
 }
 
-.rt {
-    font-weight: 300;
-    margin-bottom: .5rem;
-    font-size: 1.2rem;
+.have_tea_with_us h5 {
+    font-weight: bold;
 }
 
-.room_details {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background-color: #f6f6f6;
-    color: #333;
-}
-i {
-    margin-right: .5rem;
-    display: none;
+
+@media screen and (max-width: 576px) {
+    .have_tea_with_us {
+        margin: 2rem 5%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .have_tea_with_us h2 {
+        margin-bottom: 1.2rem;
+    }
+
+    .room:nth-child(3){
+        padding-top: 2rem;
+        border-top: 1px solid #e7e7e7;
+    }
 }

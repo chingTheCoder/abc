@@ -1,4 +1,8 @@
 /* carousel */
+*{
+    padding: 0;
+    margin: 0;
+}
 .carousel {
     height: 100vh;
     width: 100vw;
@@ -132,13 +136,71 @@
     background-image: url("public/images/carousel/slide02.png");
 }
  
+
+/*introduction*/
+#introduction {
+    position: relative;
+    height: 800px;
+}
+
+.inro_black_background {
+    position: absolute;
+    top: 10%;
+    bottom: 20%;
+    height: 80%;
+    width: 20%;
+    right: 10%;
+    background-color: #434e50;
+    z-index: 100;
+}
+
+.background_intro_image {
+    position: absolute;
+    top: 17%;
+    height: 66%;
+    width: 75%;
+    right: 15%;
+    z-index: 300;
+    background-image: url("/images/abt.png");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.background_intro_content {
+    position: absolute;
+    background-color: white;
+    height: 40%;
+    top: 30%;
+    width: 50%;
+    right: 12%;
+    z-index: 700;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.background_intro_content p {
+    font-size: 1.4;
+    width: 90%;
+    color: #434e50;
+}
+
+.background_intro_content p a {
+    color: darkgray;
+    font-weight: bold;
+}
+/*introduction*/
+
 #collection {
-    background-color: #e7e7e7;
+    background-color: #434e50;
     padding: 2rem 5%;
 }
 #collection h2 {
     text-align: center;
     padding:0;
+    color: #e7e7e7;
+    font-size: 1.8rem;
 }
 
 #collection .row aside, #collection .row article{
@@ -164,34 +226,62 @@
 
 #collection .row article div {
     width: 100%;
+    padding: 4rem;
+}
+
+.product_hr {
+    display: none;
 }
   
 /*end of collection*/
 
 /*surface and tiles*/
 #surface_and_tiles {
-    height: 60vh;
-    background-image: url("/images/surface.png");
+    height: 100vh;
+    background-image: url("https://www.navarti.com/wp-content/uploads/2021/09/METHOD-SILVER-90x90-1-scaled.jpg");
     display: grid;
     align-items: center;
     justify-items: center;
     background-attachment: local;
-    background-position: bottom bottom;
+    background-position: center center;
 }
 
 .inspire {
     margin-bottom: 5vh;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 .visit {
     border-radius: 10px;
-    padding: 5px 1.2rem 5px 1.2rem;
-    font-size: 1.5rem;
+    padding: 5px 2rem;
+    font-size: 2rem;
 }
 
 #surface_and_tiles div {
     text-align: center;
 }
+
+
+/*featured products*/
+#featured_products {
+    padding: 2rem 2%;
+}
+
+.inner_featured_products {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.featured_images_cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+.f_image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
 
 /*brand_images*/
 
@@ -265,25 +355,6 @@
     right: 15vw;
     }
     
-    #introduction {
-        margin: 1.2rem 0 1.2rem 0;
-        padding: 0;
-    }
-    
-
-    #introduction > aside {
-        display: none;
-    }
-
-    #introduction > article {
-        font-size: .8rem;
-        padding: 1.2rem 5%;
-    }
-    
-    #collection {
-        background-color: #e7e7e7;
-        padding: 1rem 5%;
-    }
 
     #collection .bathroom_collection {
         margin-top: 0;
@@ -319,7 +390,30 @@
         padding-left: 5%;
         padding-bottom: 1.2rem;
     }
+
+    #collection .row article div {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #collection .row article div h3 {
+    } 
     
+    .product_hr {
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 3px;
+        background-color: #434e50;
+        width: 20%;
+        margin: 0px auto;
+        margin-bottom: 1rem;
+    }
+    /*end of topper*/
+    #introduction {
+        display: none;
+    }
     /*surface and tiles*/
     #surface_and_tiles {
         height: 30vh;
@@ -350,6 +444,29 @@
     .brand_image {
         width: 80px;
     }
+
+    /*featured products*/
+
+    #featured_products {
+        padding: 2rem 2%;
+    }
+    
+    .inner_featured_products {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .featured_images_cover {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .f_image img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
 
 }
 

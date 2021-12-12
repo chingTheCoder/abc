@@ -2,8 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
+
+.slowed {
+    background-color: #e7e7e7;
+    height: 120px !important;
+    color: black;   
+}
+
 
 body {
     overflow-x: hidden;
@@ -304,29 +311,18 @@ footer ul {
     list-style: none;
 }
 
-
-#usefull_links ul li a {
-    color: #C92323;
-}
-.list_link{
-    margin-bottom: 1.2rem;
-    margin-top: 1.2rem;
+footer ul li a {
+    color: darkgray;
 }
 
-#top_footer {
-    box-sizing: border-box;
-    border-bottom: 1px solid whitesmoke;
-    padding: 3rem 0;
-    grid-gap: 2rem;
+.footer_content {
+    border-bottom: 1px solid darkgray;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-#top_footer h3 , #footer_brand {
-    margin-bottom: 1.2rem;
-}
-
-#map iframe{
-    height: auto;
-    width: 100%;
+.social ul li a {
+    font-size: 1.2rem;
 }
 .conn {
     margin-left: 1.2rem;
@@ -355,6 +351,8 @@ footer ul {
 }
 
 
+
+
 .smaller_navigation {
     width: 25px;
     display: grid;
@@ -366,33 +364,51 @@ footer ul {
 }
 
 
+/*bathroom navigation*/
+
 .smaller_navigation ul {
     position: fixed;
     top: 20vh;
     height: auto;
     right: 0;
     z-index: 50000;
-    width: 50vw;
+    width: 65vw;
     background-color: rgb(1, 1, 1);
     padding: 0 5%;
     transform: translateX(100%);
+    padding-top: 20px;
 }
+
+
+.bathroom_menu {
+    background-color: ;
+    transition: 1s ease-in;
+}
+
 
 
 .smaller_navigation ul li {
     margin: .8rem 0;
+    height: 40px;
+    overflow: hidden;
 }
 
 .smaller_navigation ul li a{
     text-decoration: none;
     color: darkgray;
+    height: 40px;
+    display: block;
+    border-bottom: 2px solid #e7e7e7;
+    line-height: 40px;
 }
 
 .smaller_navigation ul {
     list-style: none;
 }
 
-
+.mn {
+    margin-left: 20px;
+}
 .burger_piece {
     height: 2px;
     font-size: .1rem;
@@ -510,7 +526,7 @@ footer ul {
 @media (min-width: 576px) and (max-width : 991.99px) {
 
         .smaller_navigation ul {
-            width: 20vw;
+            width: 40vw;
         }
 }
 

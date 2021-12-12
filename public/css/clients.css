@@ -1,0 +1,75 @@
+header{
+    height: 10vh;
+}
+
+nav {
+    background-color: #242424;
+    padding: 0 5%;
+}
+
+.testmonials_header {
+    display: none;
+    height: 60vh;
+    background-image: url("/images/testmonials.png");
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.testmonials_header h1 {
+    color: #e7e7e7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clients {
+    margin: 0 5%;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  .client_image {
+      display: grid;
+      align-items: center;
+      position: relative;
+      height: 40vh;
+  }
+
+  .client_content {
+      display: grid;
+      align-items: center;
+  }
+
+  .client_image_pic {
+        position: absolute;
+        
+  }
+
+  .client_image div {
+      margin-top: 2rem;
+  }
+
+  .client_image , .client_content {
+      padding: 3rem;
+  }

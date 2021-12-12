@@ -28,7 +28,7 @@
 
                 </div>
                 <div class="background_picture col-xl-9 col-lg-8 col-md-8 order-1 order-md-2 order-lg-2 order-xl-2" 
-                    style="background-image: url('/images/surface1.png');
+                    style="background-image: url('/images/floor.png');
                         background-position: bottom right;">
 
                 </div> 
@@ -55,10 +55,10 @@
                         <a href="https://keros.com/en/" target="_blank">Keros</a>
                     </li>
                     <li>
-                        <a href="#">Viceroy</a>
+                        <a href="https://www.ecoceramic.es/index.html" target="_blank">Ecoceramics</a>
                     </li>
                     <li>
-                        <a href="#">Navarti</a>
+                        <a href="https://www.navarti.com/en/" target="_blank">Navarti</a>
                     </li>
                 </ul>
             </div>

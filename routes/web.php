@@ -53,3 +53,7 @@ Route::get('/kohler', function () {
 Route::get('/bathx', function () {
     return view('bathx');
 });
+
+Route::get('/clients', function () {
+    return view('clients');
+});

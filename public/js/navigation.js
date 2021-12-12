@@ -1,4 +1,4 @@
-let burger = document.querySelector(".smaller_navigation")
+let burger = document.querySelector("#smaller_navigation")
 
 burger.addEventListener("click", function() {
 
@@ -41,4 +41,11 @@ burger.addEventListener("click", function() {
   }
  
 
+})
+
+
+document.querySelector(".bathroom_menu").addEventListener("click", function (e) {
+    // e.preventDefault()
+    let li = document.querySelectorAll(".smaller_navigation ul li")
+    li[0].classList.toggle("slowed")
 })
